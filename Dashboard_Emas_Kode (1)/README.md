@@ -1,4 +1,4 @@
-# Dashboard Emas Insight
+# Dashboard Visualisasi
 
 ## Cara membuka
 1. Ekstrak seluruh isi ZIP ke satu folder.
@@ -22,14 +22,13 @@ python -c "from pathlib import Path; Path('data.js').write_text('window.RESEARCH
 FEVD terdapat pada array fevd, dengan field horizon, gold, ihsg, usd (dalam persen). Grafik menampilkan 20 horizon dari Tabel 9 skripsi. Tinggi segmen dinormalisasi dengan total setiap horizon untuk mempertahankan tinggi batang 100% ketika ada pembulatan; angka yang ditampilkan tetap nilai asli tabel.
 
 ## Sumber dan batas interpretasi
-Historis: data_emas_updated.xlsx (722 observasi).
-Evaluasi: akurasimodel.xlsx (90 pasangan aktual-prediksi).
-Metode, Granger, IRF, dan FEVD: Draft sidang_Yoga Regita H.A.pdf.
+Historis: data emas (722 observasi).
+Evaluasi: MAE, MSE, RMSE, MAPE.
+Metode, Granger, IRF, dan FEVD.
 FEVD adalah kontribusi terhadap varians kesalahan peramalan, bukan persentase pembentuk harga emas. Data FEVD dibulatkan tiga desimal mengikuti tabel skripsi. Dashboard tidak melatih ulang VECM.
 
 Referensi antarmuka: FRED (rentang waktu dan eksplorasi seri); Datawrapper (grafik waktu).
 
-Paket ini tidak memerlukan library JavaScript eksternal, akun hosting, atau kunci API. Link web story dan referensi hanya memerlukan internet jika dibuka.
 
 ## Navigasi
 Navbar berada di bagian atas pada desktop dan HP. Jika lebar layar terbatas, geser menu atas secara horizontal.
